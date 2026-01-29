@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Análisis de la Agenda Ambiental en Mongabay Latam (2026)</title>
+  <title>Análisis de la Agenda Ambiental – Mongabay Latam (2026)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
@@ -15,13 +15,14 @@
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #0f2027;
-      color: #fff;
+      background: #f5f7f8;
+      color: #222;
+      line-height: 1.7;
     }
 
     header {
       min-height: 100vh;
-      background: 
+      background:
         linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
         url("https://www.caminosalkantay.com/blog/wp-content/uploads/2025/07/Selva-Peruana-1024x683.jpg");
       background-size: cover;
@@ -32,64 +33,77 @@
       justify-content: center;
       text-align: center;
       padding: 40px;
+      color: #fff;
     }
 
-    h1 {
+    header h1 {
       font-size: 3rem;
+      max-width: 900px;
       margin-bottom: 20px;
     }
 
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      max-width: 720px;
+    header p {
+      font-size: 1.2rem;
+      max-width: 800px;
       margin: auto;
     }
 
     section {
       padding: 80px 20px;
-      background: #ffffff;
-      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #1e3c49;
+    }
+
+    h3 {
+      margin-top: 40px;
+      color: #2c5364;
     }
 
     .card {
-      max-width: 800px;
-      margin: auto;
-      background: #f4f4f4;
-      padding: 32px;
-      border-radius: 18px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
     }
 
     ul {
-      line-height: 1.8;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-size: 0.9rem;
-      opacity: 0.85;
-      background: #0f2027;
-      color: #fff;
+      margin-left: 20px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 30px;
-      padding: 14px 30px;
+      margin-top: 40px;
+      padding: 14px 32px;
       background: #2c5364;
       color: #fff;
       border-radius: 30px;
       text-decoration: none;
       font-weight: 600;
-      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      transition: all 0.3s ease;
     }
 
     .btn:hover {
       background: #1e3c49;
-      transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      background: #0f2027;
+      color: #fff;
+      text-align: center;
+      padding: 50px 20px;
+      font-size: 0.9rem;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -98,55 +112,124 @@
 
 <header>
   <div data-aos="fade-up">
-    <h1>Scraping y análisis ambiental de Mongabay Latam</h1>
+    <h1>Análisis de Tendencias en la Agenda Ambiental Periodística de Mongabay Latam (2026)</h1>
     <p>
       Proyecto académico desarrollado para MediaLab.  
-      Automatiza la extracción, procesamiento y análisis de artículos
-      periodísticos sobre conflictos socioambientales y biodiversidad
-      en América Latina.
+      Ciencia de datos aplicada al periodismo ambiental en América Latina.
     </p>
 
-    <a class="btn" 
-       href="https://github.com/aarevalos-collab/Proyecto-Final---Extracci-n-de-Datos" 
-       target="_blank">
+    <a class="btn" href="https://github.com/aarevalos-collab/Proyecto-Final---Extracci-n-de-Datos" target="_blank">
       Ver repositorio en GitHub
     </a>
   </div>
 </header>
 
 <section>
-  <div class="card" data-aos="fade-right">
-    <h2>📌 ¿Qué hace este proyecto?</h2>
+  <div class="container card" data-aos="fade-up">
+    <h2>📌 Pregunta de investigación</h2>
+    <p><strong>¿Qué patrones emergen de los datos ambientales presentados en Mongabay Latam y qué significan para la región?</strong></p>
+  </div>
+</section>
+
+<section>
+  <div class="container card" data-aos="fade-right">
+    <h2>📰 Fuente de datos</h2>
+    <p>
+      Los datos analizados provienen de <strong>Mongabay Latam</strong>, medio periodístico especializado
+      en temas ambientales y derechos humanos en América Latina.
+    </p>
+    <p>
+      La información fue recolectada mediante <strong>web scraping</strong> a partir del feed RSS oficial del sitio.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container card" data-aos="fade-left">
+    <h2>🧪 Metodología</h2>
+
+    <h3>1️⃣ Extracción de datos</h3>
+    <p>
+      Se realizó web scraping de artículos publicados durante enero de 2026 utilizando Python,
+      Requests, BeautifulSoup y Pandas.
+    </p>
+
+    <h3>2️⃣ Construcción del dataset</h3>
+    <p>
+      Se recopiló una muestra de <strong>30 artículos</strong> con variables como título, fecha,
+      autor, texto completo, país, temática y longitud.
+    </p>
+
+    <h3>3️⃣ Análisis de contenido</h3>
+    <p>
+      Se aplicó análisis textual para identificar patrones temáticos, geográficos y narrativos,
+      así como la frecuencia de palabras clave.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container card" data-aos="fade-up">
+    <h2>🔍 Hallazgos</h2>
+
+    <h3>¿Qué significan los datos?</h3>
+    <p>
+      El eje <strong>“Agua y contaminación”</strong> domina la cobertura con 13 de los 30 artículos.
+      La palabra “agua” registra 144 menciones, posicionándose como variable transversal del conflicto ambiental.
+    </p>
+
+    <p>
+      Argentina y Bolivia concentran la mayor cobertura, reflejando crisis vinculadas a extractivismo,
+      gobernanza hídrica y conflictos territoriales.
+    </p>
+
+    <p>
+      La recurrencia de términos como <em>indígenas</em> y <em>comunidades</em> evidencia una narrativa
+      profundamente sociopolítica.
+    </p>
+
+    <h3>Patrones identificados</h3>
     <ul>
-      <li>Realiza web scraping de artículos de Mongabay Latam</li>
-      <li>Procesa y limpia datos textuales ambientales</li>
-      <li>Genera archivos CSV crudos y analizados</li>
-      <li>Identifica patrones temáticos y geográficos</li>
-      <li>Apoya el periodismo de datos y la comunicación ambiental</li>
+      <li><strong>Bancarrota hídrica y extractivismo</strong>: minería y crisis del agua.</li>
+      <li><strong>Judicialización de la conservación</strong>: tratados, cortes y sanciones.</li>
+      <li><strong>Desplazamiento geográfico</strong>: foco creciente en el Cono Sur.</li>
     </ul>
   </div>
 </section>
 
 <section>
-  <div class="card" data-aos="fade-left">
-    <h2>🗂️ Estructura del proyecto</h2>
-    <ul>
-      <li><strong>code/</strong>: scripts de scraping y procesamiento</li>
-      <li><strong>data/</strong>: datasets en formato CSV</li>
-      <li><strong>docs/</strong>: página web del proyecto (GitHub Pages)</li>
-    </ul>
+  <div class="container card" data-aos="fade-right">
+    <h2>📣 Relevancia para la comunicación y la sociedad</h2>
+    <p>
+      El análisis demuestra que la crisis ambiental ya no puede narrarse de forma aislada.
+      El enfoque longitudinal combate la amnesia generacional y aporta contexto histórico.
+    </p>
+    <p>
+      El 43 % de la muestra se enfoca en el agua, revelando una urgencia estructural, económica
+      y política para la región.
+    </p>
   </div>
 </section>
 
 <section>
-  <div class="card" data-aos="fade-right">
-    <h2>🛠️ Tecnologías utilizadas</h2>
+  <div class="container card" data-aos="fade-left">
+    <h2>📌 Conclusión</h2>
+    <p>
+      El periodismo ambiental en 2026 actúa como fiscalizador de los sistemas políticos y económicos.
+      La degradación ambiental aparece como resultado de decisiones estructurales que afectan
+      desproporcionadamente a poblaciones indígenas y recursos hídricos.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container card" data-aos="fade-up">
+    <h2>⚙️ Tecnologías utilizadas</h2>
     <ul>
       <li>Python</li>
-      <li>BeautifulSoup</li>
       <li>Requests</li>
+      <li>BeautifulSoup</li>
       <li>Pandas</li>
-      <li>Git & GitHub</li>
       <li>GitHub Pages</li>
     </ul>
   </div>
