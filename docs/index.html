@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Análisis de la Agenda Ambiental en Mongabay Latam (2026)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0f2027;
+      color: #fff;
+    }
+
+    header {
+      min-height: 100vh;
+      background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("https://www.caminosalkantay.com/blog/wp-content/uploads/2025/07/Selva-Peruana-1024x683.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    section {
+      padding: 80px 20px;
+      background: #ffffff;
+      color: #222;
+    }
+
+    .card {
+      max-width: 800px;
+      margin: auto;
+      background: #f4f4f4;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9rem;
+      opacity: 0.85;
+      background: #0f2027;
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      background: #2c5364;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e3c49;
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div data-aos="fade-up">
+    <h1>Scraping y análisis ambiental de Mongabay Latam</h1>
+    <p>
+      Proyecto académico desarrollado para MediaLab.  
+      Automatiza la extracción, procesamiento y análisis de artículos
+      periodísticos sobre conflictos socioambientales y biodiversidad
+      en América Latina.
+    </p>
+
+    <a class="btn" 
+       href="https://github.com/aarevalos-collab/Proyecto-Final---Extracci-n-de-Datos" 
+       target="_blank">
+      Ver repositorio en GitHub
+    </a>
+  </div>
+</header>
+
+<section>
+  <div class="card" data-aos="fade-right">
+    <h2>📌 ¿Qué hace este proyecto?</h2>
+    <ul>
+      <li>Realiza web scraping de artículos de Mongabay Latam</li>
+      <li>Procesa y limpia datos textuales ambientales</li>
+      <li>Genera archivos CSV crudos y analizados</li>
+      <li>Identifica patrones temáticos y geográficos</li>
+      <li>Apoya el periodismo de datos y la comunicación ambiental</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="card" data-aos="fade-left">
+    <h2>🗂️ Estructura del proyecto</h2>
+    <ul>
+      <li><strong>code/</strong>: scripts de scraping y procesamiento</li>
+      <li><strong>data/</strong>: datasets en formato CSV</li>
+      <li><strong>docs/</strong>: página web del proyecto (GitHub Pages)</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="card" data-aos="fade-right">
+    <h2>🛠️ Tecnologías utilizadas</h2>
+    <ul>
+      <li>Python</li>
+      <li>BeautifulSoup</li>
+      <li>Requests</li>
+      <li>Pandas</li>
+      <li>Git & GitHub</li>
+      <li>GitHub Pages</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>Trabajo académico – MediaLab · 2026</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+
+</body>
+</html>
