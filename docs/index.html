@@ -1,251 +1,232 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Análisis de la Agenda Ambiental – Mongabay Latam (2026)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Análisis de Tendencias – Mongabay Latam (2026)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+            background-color: #f7f9fc;
+            color: #222;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
 
-  <!-- AOS Animations -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f5f7f8;
-      color: #222;
-      line-height: 1.7;
-    }
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5em;
+        }
 
-    header {
-      min-height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
-        url("https://www.caminosalkantay.com/blog/wp-content/uploads/2025/07/Selva-Peruana-1024x683.jpg");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px;
-      color: #fff;
-    }
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 2em;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+        }
 
-    header h1 {
-      font-size: 3rem;
-      max-width: 900px;
-      margin-bottom: 20px;
-    }
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5em;
+        }
 
-    header p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: auto;
-    }
+        p {
+            margin: 1em 0;
+        }
 
-    section {
-      padding: 80px 20px;
-    }
+        ul, ol {
+            margin-left: 1.5em;
+        }
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
+        li {
+            margin: 0.5em 0;
+        }
 
-    h2 {
-      margin-top: 0;
-      font-size: 2rem;
-      color: #1e3c49;
-    }
+        strong {
+            font-weight: 600;
+        }
 
-    h3 {
-      margin-top: 40px;
-      color: #2c5364;
-    }
+        em {
+            font-style: italic;
+        }
 
-    .card {
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-    }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 2em 0;
+        }
 
-    ul {
-      margin-left: 20px;
-    }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
 
-    .btn {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 14px 32px;
-      background: #2c5364;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
+        a:hover {
+            text-decoration: underline;
+        }
 
-    .btn:hover {
-      background: #1e3c49;
-      transform: translateY(-3px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
-    }
-
-    footer {
-      background: #0f2027;
-      color: #fff;
-      text-align: center;
-      padding: 50px 20px;
-      font-size: 0.9rem;
-      opacity: 0.9;
-    }
-  </style>
+        footer {
+            margin-top: 3em;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
+<main>
 
-<header>
-  <div data-aos="fade-up">
     <h1>Análisis de Tendencias en la Agenda Ambiental Periodística de Mongabay Latam (2026)</h1>
-    <p>
-      Proyecto académico desarrollado para MediaLab.  
-      Ciencia de datos aplicada al periodismo ambiental en América Latina.
-    </p>
 
-    <a class="btn" href="https://github.com/aarevalos-collab/Proyecto-Final---Extracci-n-de-Datos" target="_blank">
-      Ver repositorio en GitHub
-    </a>
-  </div>
-</header>
-
-<section>
-  <div class="container card" data-aos="fade-up">
     <h2>📌 Pregunta de investigación</h2>
     <p><strong>¿Qué patrones emergen de los datos ambientales presentados en Mongabay Latam y qué significan para la región?</strong></p>
-  </div>
-</section>
 
-<section>
-  <div class="container card" data-aos="fade-right">
+    <hr>
+
     <h2>📰 Fuente de datos</h2>
     <p>
-      Los datos analizados provienen de <strong>Mongabay Latam</strong>, medio periodístico especializado
-      en temas ambientales y derechos humanos en América Latina.
+        Los datos analizados provienen de <strong>Mongabay Latam</strong>
+        (<a href="https://es.mongabay.com" target="_blank">https://es.mongabay.com</a>),
+        medio periodístico especializado en temas ambientales y derechos humanos en América Latina.
+        La información fue recolectada mediante <strong>web scraping</strong> a partir del feed RSS oficial del sitio.
     </p>
-    <p>
-      La información fue recolectada mediante <strong>web scraping</strong> a partir del feed RSS oficial del sitio.
-    </p>
-  </div>
-</section>
 
-<section>
-  <div class="container card" data-aos="fade-left">
+    <hr>
+
     <h2>🧪 Metodología</h2>
-
-    <h3>1️⃣ Extracción de datos</h3>
     <p>
-      Se realizó web scraping de artículos publicados durante enero de 2026 utilizando Python,
-      Requests, BeautifulSoup y Pandas.
+        El proyecto aplica técnicas de ciencia de datos al periodismo ambiental y se desarrolló en las siguientes etapas:
     </p>
 
-    <h3>2️⃣ Construcción del dataset</h3>
-    <p>
-      Se recopiló una muestra de <strong>30 artículos</strong> con variables como título, fecha,
-      autor, texto completo, país, temática y longitud.
-    </p>
+    <ol>
+        <li>
+            <strong>Extracción de datos</strong><br>
+            Se realizó web scraping de artículos publicados en Mongabay Latam durante enero de 2026 utilizando Python y las librerías
+            <em>requests</em>, <em>BeautifulSoup</em> y <em>pandas</em>.
+        </li>
 
-    <h3>3️⃣ Análisis de contenido</h3>
-    <p>
-      Se aplicó análisis textual para identificar patrones temáticos, geográficos y narrativos,
-      así como la frecuencia de palabras clave.
-    </p>
-  </div>
-</section>
+        <li>
+            <strong>Construcción del dataset</strong><br>
+            Se recopiló una muestra de <strong>30 artículos</strong>, extrayendo las siguientes variables:
+            <ul>
+                <li>título</li>
+                <li>fecha de publicación</li>
+                <li>autor</li>
+                <li>texto completo</li>
+                <li>país mencionado</li>
+                <li>temática principal</li>
+                <li>longitud del artículo (palabras y caracteres)</li>
+            </ul>
+        </li>
 
-<section>
-  <div class="container card" data-aos="fade-up">
+        <li>
+            <strong>Análisis de contenido</strong><br>
+            Se aplicó análisis textual para identificar patrones temáticos, geográficos y narrativos, así como la frecuencia de
+            palabras clave vinculadas a conflictos socioambientales.
+        </li>
+    </ol>
+
+    <hr>
+
     <h2>🔍 Hallazgos</h2>
 
-    <h3>¿Qué significan los datos?</h3>
+    <h3>Tendencias Críticas en la Agenda Ambiental de Mongabay Latam (2026)</h3>
     <p>
-      El eje <strong>“Agua y contaminación”</strong> domina la cobertura con 13 de los 30 artículos.
-      La palabra “agua” registra 144 menciones, posicionándose como variable transversal del conflicto ambiental.
+        El análisis de los artículos permite identificar una radiografía de las tensiones actuales entre desarrollo industrial,
+        política pública y conservación ambiental en América Latina.
+    </p>
+
+    <h3>1️⃣ ¿Qué significan los datos?</h3>
+    <p>
+        El hallazgo más relevante es la centralidad del eje <strong>“Agua y contaminación”</strong>, presente en
+        <strong>13 de los 30 artículos analizados</strong>. Además, la palabra <em>“agua”</em> registra
+        <strong>144 menciones</strong>, lo que indica que el recurso hídrico se ha convertido en un factor transversal del conflicto
+        ambiental en la región.
     </p>
 
     <p>
-      Argentina y Bolivia concentran la mayor cobertura, reflejando crisis vinculadas a extractivismo,
-      gobernanza hídrica y conflictos territoriales.
+        Desde el punto de vista geográfico, <strong>Argentina (9 artículos)</strong> y <strong>Bolivia (7 artículos)</strong>
+        concentran la cobertura periodística. Ambos países enfrentan crisis vinculadas a la gobernanza hídrica, la expansión del
+        extractivismo y los conflictos territoriales, como los casos del Parque Nacional Aguaragüe o el pueblo indígena Ese Ejja.
     </p>
 
     <p>
-      La recurrencia de términos como <em>indígenas</em> y <em>comunidades</em> evidencia una narrativa
-      profundamente sociopolítica.
+        La alta frecuencia de términos como <em>“indígenas”</em> (108 menciones) y <em>“comunidades”</em> (92 menciones) demuestra que
+        la narrativa de Mongabay Latam no es exclusivamente ecológica, sino profundamente <strong>sociopolítica</strong>,
+        vinculando la protección ambiental con los derechos humanos y la tenencia de la tierra.
     </p>
 
-    <h3>Patrones identificados</h3>
+    <hr>
+
+    <h3>2️⃣ Patrones identificados</h3>
+    <p>Del cruce entre temáticas, países y palabras clave emergen tres patrones principales:</p>
+
     <ul>
-      <li><strong>Bancarrota hídrica y extractivismo</strong>: minería y crisis del agua.</li>
-      <li><strong>Judicialización de la conservación</strong>: tratados, cortes y sanciones.</li>
-      <li><strong>Desplazamiento geográfico</strong>: foco creciente en el Cono Sur.</li>
-    </ul>
-  </div>
-</section>
+        <li>
+            <strong>Bancarrota hídrica y extractivismo</strong><br>
+            Existe una correlación directa entre la minería (litio, oro) y la crisis del agua. El análisis de texto muestra que
+            términos como <em>“proyecto”</em>, <em>“inversiones”</em> y <em>“mercurio”</em> aparecen frecuentemente asociados a
+            conflictos hídricos, evidenciando una doble presión: cambio climático y actividad industrial.
+        </li>
 
-<section>
-  <div class="container card" data-aos="fade-right">
+        <li>
+            <strong>Judicialización de la conservación</strong><br>
+            La recurrencia de términos como <em>“tratado”</em>, <em>“decreto”</em>, <em>“corte”</em> y <em>“sanciones”</em> indica un
+            giro del periodismo ambiental hacia la cobertura de procesos judiciales y políticas públicas, como el Tratado de
+            Altamar o el juicio por el asesinato del defensor ambiental Quinto Inuma.
+        </li>
+
+        <li>
+            <strong>Desplazamiento geográfico de la crisis ambiental</strong><br>
+            Aunque la Amazonía sigue siendo relevante, se observa un desplazamiento de la atención periodística hacia el Cono Sur
+            (Chile y Argentina), impulsado por incendios forestales de gran magnitud y la expansión de industrias como la
+            salmonicultura.
+        </li>
+    </ul>
+
+    <hr>
+
     <h2>📣 Relevancia para la comunicación y la sociedad</h2>
     <p>
-      El análisis demuestra que la crisis ambiental ya no puede narrarse de forma aislada.
-      El enfoque longitudinal combate la amnesia generacional y aporta contexto histórico.
+        Desde el campo de la comunicación, los datos evidencian que la crisis ambiental ya no puede narrarse de manera aislada.
+        La alta frecuencia de la palabra <em>“años”</em> (113 menciones) refleja un enfoque longitudinal que compara el presente con
+        décadas pasadas, aportando contexto histórico y combatiendo la amnesia generacional en la comunicación científica.
     </p>
-    <p>
-      El 43 % de la muestra se enfoca en el agua, revelando una urgencia estructural, económica
-      y política para la región.
-    </p>
-  </div>
-</section>
 
-<section>
-  <div class="container card" data-aos="fade-left">
+    <p>
+        Para la sociedad, la relevancia es de carácter estructural y existencial: el <strong>43 % de la muestra se enfoca en el
+        agua</strong>, un recurso vital para la supervivencia humana. Un hallazgo destacado señala que por cada dólar invertido en
+        proteger la naturaleza, se gastan 30 en actividades que la degradan, lo que traduce una abstracción científica en una
+        urgencia económica y política.
+    </p>
+
+    <hr>
+
     <h2>📌 Conclusión</h2>
     <p>
-      El periodismo ambiental en 2026 actúa como fiscalizador de los sistemas políticos y económicos.
-      La degradación ambiental aparece como resultado de decisiones estructurales que afectan
-      desproporcionadamente a poblaciones indígenas y recursos hídricos.
+        El análisis mediante web scraping muestra que el periodismo ambiental en 2026 cumple un rol fiscalizador de los sistemas
+        políticos y económicos. La degradación ambiental no aparece como un accidente, sino como el resultado de decisiones
+        estructurales que afectan de manera desproporcionada a los recursos hídricos y a las poblaciones indígenas de América
+        Latina.
     </p>
-  </div>
-</section>
 
-<section>
-  <div class="container card" data-aos="fade-up">
-    <h2>⚙️ Tecnologías utilizadas</h2>
-    <ul>
-      <li>Python</li>
-      <li>Requests</li>
-      <li>BeautifulSoup</li>
-      <li>Pandas</li>
-      <li>GitHub Pages</li>
-    </ul>
-  </div>
-</section>
+    <footer>
+        Proyecto académico – MediaLab | 2026
+    </footer>
 
-<footer>
-  <p>Trabajo académico – MediaLab · 2026</p>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,
-    once: true
-  });
-</script>
-
+</main>
 </body>
 </html>
+
